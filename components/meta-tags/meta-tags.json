@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_meta_meta_tags",
+  "info": {
+    "name": "MetaTags",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    }
+  }
+}

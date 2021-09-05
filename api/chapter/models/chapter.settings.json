@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapters",
+  "info": {
+    "name": "Chapter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Subject": {
+      "via": "Chapters",
+      "model": "subjects"
+    },
+    "Notes": {
+      "collection": "notes",
+      "via": "Chapter"
+    }
+  }
+}
