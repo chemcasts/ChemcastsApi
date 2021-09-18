@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "examples",
+  "info": {
+    "name": "Examples",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Problem": {
+      "type": "richtext"
+    },
+    "Solution": {
+      "type": "richtext"
+    },
+    "Level": {
+      "type": "enumeration",
+      "enum": [
+        "Easy",
+        "Medium",
+        "Expert"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true
+    },
+    "Chapter": {
+      "model": "chapter"
+    }
+  }
+}
