@@ -37,6 +37,10 @@
     "Chapters": {
       "via": "Subject",
       "collection": "chapter"
+    },
+    "Books": {
+      "via": "Subject",
+      "collection": "books"
     }
   }
 }

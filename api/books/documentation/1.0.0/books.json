@@ -604,7 +604,7 @@
           "Edition": {
             "type": "string"
           },
-          "subject": {
+          "Subject": {
             "required": [
               "id"
             ],
@@ -625,6 +625,12 @@
                 "type": "string"
               },
               "Chapters": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Books": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -664,7 +670,7 @@
           "Edition": {
             "type": "string"
           },
-          "subject": {
+          "Subject": {
             "type": "string"
           },
           "published_at": {

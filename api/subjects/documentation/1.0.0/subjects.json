@@ -628,6 +628,55 @@
                     "type": "string"
                   }
                 },
+                "Examples": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Books": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Slug": {
+                  "type": "uid"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Cover": {
+                  "type": "string"
+                },
+                "Authors": {
+                  "type": "string"
+                },
+                "Edition": {
+                  "type": "string"
+                },
+                "Subject": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -658,6 +707,12 @@
             "type": "string"
           },
           "Chapters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Books": {
             "type": "array",
             "items": {
               "type": "string"

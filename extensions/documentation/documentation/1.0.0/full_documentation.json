@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/18/2021 11:59:49 PM"
+    "x-generation-date": "09/20/2021 4:43:57 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4919,7 +4919,7 @@
           "Edition": {
             "type": "string"
           },
-          "subject": {
+          "Subject": {
             "required": [
               "id"
             ],
@@ -4940,6 +4940,12 @@
                 "type": "string"
               },
               "Chapters": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Books": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -4979,7 +4985,7 @@
           "Edition": {
             "type": "string"
           },
-          "subject": {
+          "Subject": {
             "type": "string"
           },
           "published_at": {
@@ -5039,6 +5045,12 @@
                   "type": "string"
                 }
               },
+              "Books": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5085,6 +5097,49 @@
               }
             }
           },
+          "Examples": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Slug"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Problem": {
+                  "type": "string"
+                },
+                "Solution": {
+                  "type": "string"
+                },
+                "Level": {
+                  "type": "string",
+                  "enum": [
+                    "Easy",
+                    "Medium",
+                    "Expert"
+                  ]
+                },
+                "Slug": {
+                  "type": "uid"
+                },
+                "Chapter": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5110,6 +5165,12 @@
             "type": "string"
           },
           "Notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Examples": {
             "type": "array",
             "items": {
               "type": "string"
@@ -5176,6 +5237,12 @@
                 "type": "string"
               },
               "Notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Examples": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -5276,6 +5343,12 @@
                 "type": "string"
               },
               "Notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Examples": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -5441,6 +5514,55 @@
                     "type": "string"
                   }
                 },
+                "Examples": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Books": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Slug": {
+                  "type": "uid"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Cover": {
+                  "type": "string"
+                },
+                "Authors": {
+                  "type": "string"
+                },
+                "Edition": {
+                  "type": "string"
+                },
+                "Subject": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5471,6 +5593,12 @@
             "type": "string"
           },
           "Chapters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Books": {
             "type": "array",
             "items": {
               "type": "string"

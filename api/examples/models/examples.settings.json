@@ -31,7 +31,8 @@
       "required": true
     },
     "Chapter": {
-      "model": "chapter"
+      "model": "chapter",
+      "via": "Examples"
     }
   }
 }
