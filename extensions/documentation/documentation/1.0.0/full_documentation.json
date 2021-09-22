@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/20/2021 4:43:57 PM"
+    "x-generation-date": "09/22/2021 11:39:59 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5108,9 +5108,6 @@
                 "id": {
                   "type": "string"
                 },
-                "Problem": {
-                  "type": "string"
-                },
                 "Solution": {
                   "type": "string"
                 },
@@ -5118,7 +5115,8 @@
                   "type": "string",
                   "enum": [
                     "Easy",
-                    "Medium",
+                    "Normal",
+                    "Hard",
                     "Expert"
                   ]
                 },
@@ -5126,6 +5124,9 @@
                   "type": "uid"
                 },
                 "Chapter": {
+                  "type": "string"
+                },
+                "Problem": {
                   "type": "string"
                 },
                 "published_at": {
@@ -5197,9 +5198,6 @@
           "id": {
             "type": "string"
           },
-          "Problem": {
-            "type": "string"
-          },
           "Solution": {
             "type": "string"
           },
@@ -5207,7 +5205,8 @@
             "type": "string",
             "enum": [
               "Easy",
-              "Medium",
+              "Normal",
+              "Hard",
               "Expert"
             ]
           },
@@ -5259,6 +5258,9 @@
               }
             }
           },
+          "Problem": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5270,9 +5272,6 @@
           "Slug"
         ],
         "properties": {
-          "Problem": {
-            "type": "string"
-          },
           "Solution": {
             "type": "string"
           },
@@ -5280,7 +5279,8 @@
             "type": "string",
             "enum": [
               "Easy",
-              "Medium",
+              "Normal",
+              "Hard",
               "Expert"
             ]
           },
@@ -5288,6 +5288,9 @@
             "type": "uid"
           },
           "Chapter": {
+            "type": "string"
+          },
+          "Problem": {
             "type": "string"
           },
           "published_at": {

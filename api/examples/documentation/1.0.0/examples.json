@@ -523,9 +523,6 @@
           "id": {
             "type": "string"
           },
-          "Problem": {
-            "type": "string"
-          },
           "Solution": {
             "type": "string"
           },
@@ -533,7 +530,8 @@
             "type": "string",
             "enum": [
               "Easy",
-              "Medium",
+              "Normal",
+              "Hard",
               "Expert"
             ]
           },
@@ -585,6 +583,9 @@
               }
             }
           },
+          "Problem": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -596,9 +597,6 @@
           "Slug"
         ],
         "properties": {
-          "Problem": {
-            "type": "string"
-          },
           "Solution": {
             "type": "string"
           },
@@ -606,7 +604,8 @@
             "type": "string",
             "enum": [
               "Easy",
-              "Medium",
+              "Normal",
+              "Hard",
               "Expert"
             ]
           },
@@ -614,6 +613,9 @@
             "type": "uid"
           },
           "Chapter": {
+            "type": "string"
+          },
+          "Problem": {
             "type": "string"
           },
           "published_at": {

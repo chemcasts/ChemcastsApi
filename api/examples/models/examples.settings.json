@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Problem": {
-      "type": "richtext"
-    },
     "Solution": {
       "type": "richtext"
     },
@@ -22,7 +19,8 @@
       "type": "enumeration",
       "enum": [
         "Easy",
-        "Medium",
+        "Normal",
+        "Hard",
         "Expert"
       ]
     },
@@ -33,6 +31,9 @@
     "Chapter": {
       "model": "chapter",
       "via": "Examples"
+    },
+    "Problem": {
+      "type": "text"
     }
   }
 }
