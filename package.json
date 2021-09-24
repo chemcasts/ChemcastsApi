@@ -1,7 +1,7 @@
 {
   "name": "chemcasts",
   "private": true,
-  "version": "alpha-1.0.0",
+  "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
