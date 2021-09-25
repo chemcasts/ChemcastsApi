@@ -28,7 +28,7 @@
     "yarn": "^1.22.11"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Dilip Kadavla"
   },
   "strapi": {
     "uuid": "f6c0ff93-4365-4730-8fc9-fead0e5aea63"
